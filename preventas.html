@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preventas</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-color">
+    <header>
+        <div class="verCartelera">
+            <a href="./index.html" class="gap-2">
+                <img src="./img/logo-cinepolis.webp" alt="logo-cinepolis">
+            </a>
+        </div>
+        <div class="nav-posicion">
+            <nav class="navegacion">
+                <div class="navegacion__menu">
+                    <a href="#">Menu</a>
+                    <a href="./preventas.html">Preventas</a>
+                </div>
+                <div class="navegacion__redes">
+                    <!-- facebook -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook navegacion__redes--colorFacebook"
+                        width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                    <!-- Twitter -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter navegacion__redes--colorTwitter"
+                        width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg>
+                    <!-- Instagram -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram navegacion__redes--colorInstagram"
+                        width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg>
+                    <!-- Youtube -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube navegacion__redes--colorYoutube"
+                        width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="3" y="5" width="18" height="14" rx="4" />
+                        <path d="M10 9l5 3l-5 3z" />
+                    </svg>
+                    <!-- app moviles -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile navegacion__redes--colorApp"
+                        width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="7" y="4" width="10" height="16" rx="1" />
+                        <line x1="11" y1="5" x2="13" y2="5" />
+                        <line x1="12" y1="17" x2="12" y2="17.01" />
+                    </svg>
+                </div>
+            </nav>
+        </div>
+        <div class="contenedorInput">
+            <div class="contenedorInput__sucursal">
+                <select name="sucursal" id="sucursal" class="gap-pequeño input-Texto">
+                    <option>Seleccione una cuidad</option>
+                    <option value="Guatemala,Guatemala" selected>Guatemala,Guatemala</option>
+                    <option value="Jutiapa">Jutiapa</option>
+                    <option value="Mazatenango,Guatemala">Mazatenango,Guatemala</option>
+                    <option value="Quetzaltenango,Guatemala">Quetzaltenango,Guatemala</option>
+                    <option value="San pedro carcha">San pedro carchá</option>
+                    <option value="Zacapa">Zacapa</option>
+                </select>
+            </div>
+            <div class="contenedorInput__cine">
+                <select name="cine" id="cine" class="gap-pequeño input-Texto">
+                    <option disabled selected>Seleccione un cine</option>
+                    <option value="Cinepolis Cayala">Cinepolis Cayala</option>
+                    <option value="Cinepolis El Frutal">Cinepolis El Frutal</option>
+                    <option value="Cinepolis Galerias Miraflores">Cinepolis Galerias Miraflores</option>
+                    <option value="Cinepolis Naranjo Mall">Cinepolis Naranjo Mall</option>
+                    <option value="Cinepolis Oakland Mall">Cinepolis Oakland Mall</option>
+                    <option value="Cinepolis Portales">Cinepolis Portales</option>
+                </select>
+            </div>
+            <div class="contenedorInput__boton">
+                <input type="submit" class="boton boton--primario gap-pequeño input-Texto" value="ver cartelera">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedorPreventas">
+            <h3 class="texto-uppercase">preventas</h3>
+            <div class="contenedorPreventas__peliculas--espacio">
+                <img src="./img/venus.jpg" alt="venus" class="img-size">
+                <img src="./img/malefica.jpg" alt="malefica" class="img-size">
+                <img src="./img/godzilla.jpg" alt="godzilla" class="img-size">
+            </div>
+        </div>
+        <div class="contenedorPelicula">
+            <div class="contenedorPelicula__localizacion">
+                <div class="contenedorCuidad">
+                    <div class="contenedorPrincipal-estilo">
+                        <h3 class="margin-none texto-azul"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2.5" stroke="#2B70AB" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="12" cy="11" r="3" />
+                                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                            </svg>Ciudad<svg class="direccion-derecha" id="ciudadClick-javascript" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-down" width="24"
+                                height="24" viewBox="0 0 24 24" stroke-width="2.5" stroke="#2B70AB" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)" />
+                            </svg> </h3>
+                    </div>
+                    <div class="contenedorSecundario-estilo" id="ciudadVisible-javaScript">
+                        <p class="texto-negrita">¿En qué ciudad la quieres ver?</p>
+                        <select name="sucursal" id="sucursal" class="input-Texto w-100">
+                            <option>Seleccione una cuidad</option>
+                            <option value="Guatemala,Guatemala" selected>Guatemala,Guatemala</option>
+                            <option value="Jutiapa">Jutiapa</option>
+                            <option value="Mazatenango,Guatemala">Mazatenango,Guatemala</option>
+                            <option value="Quetzaltenango,Guatemala">Quetzaltenango,Guatemala</option>
+                            <option value="San pedro carcha">San pedro carchá</option>
+                            <option value="Zacapa">Zacapa</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="contenedorComplejos">
+                    <div class="contenedorPrincipal-estilo">
+                        <h3 class="margin-none texto-azul">
+                            Complejos
+                            <svg class="direccion-derecha" id="complejosClick-javascript" xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-caret-down" width="24" height="24" viewBox="0 0 24 24"
+                                stroke-width="2.5" stroke="#2B70AB" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)" />
+                            </svg>
+                        </h3>
+                    </div>
+                    <div class="contenedorSecundario-estilo" id="complejosVisible-javascript">
+                        <div class="lista-javascript lista-estilo2">
+                            <p class="w-100">Cinepolis El frutal <svg class="direccion-derecha" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-x" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2.5" stroke="#2B70AB" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <rect x="4" y="4" width="16" height="16" rx="2" />
+                                <path d="M10 10l4 4m0 -4l-4 4" />
+                            </svg></p>
+                        </div>
+                        <select name="cine" id="cine" class="input-Texto w-100">
+                            <option value="Cinepolis Cayala">Cinepolis Cayala</option>
+                            <option value="Cinepolis El Frutal">Cinepolis El Frutal</option>
+                            <option value="Cinepolis Galerias Miraflores">Cinepolis Galerias Miraflores</option>
+                            <option value="Cinepolis Naranjo Mall">Cinepolis Naranjo Mall</option>
+                            <option value="Cinepolis Oakland Mall">Cinepolis Oakland Mall</option>
+                            <option value="Cinepolis Portales">Cinepolis Portales</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="contenedorDia">
+                    <div class="contenedorPrincipal-estilo">
+                        <h3 class="margin-none texto-azul">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2.5" stroke="#2B70AB" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <rect x="4" y="5" width="16" height="16" rx="2" />
+                                <line x1="16" y1="3" x2="16" y2="7" />
+                                <line x1="8" y1="3" x2="8" y2="7" />
+                                <line x1="4" y1="11" x2="20" y2="11" />
+                                <rect x="8" y="15" width="2" height="2" />
+                            </svg>
+                            Día
+                            <svg class="direccion-derecha" id="diaClick-javascript" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-down"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5" stroke="#2B70AB" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)" />
+                            </svg>
+                        </h3>
+                    </div>
+                    <div class="contenedorSecundario-estilo" id="diaVisible-javascript">
+                        <select name="dia" id="dia" class="input-Texto w-100">
+                            <option value="10 diciembre">Mañana(10 diciembre)</option>
+                            <option value="11 diciembre">11 diciembre</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="contenedorProyeccion">
+                    <div class="contenedorPrincipal-estilo">
+                        <h3 class="margin-none texto-azul">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-video" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2.5" stroke="#2B70AB" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z" />
+                                <rect x="3" y="6" width="12" height="12" rx="2" />
+                            </svg>
+                            Tipo de proyección
+                            <svg class="direccion-derecha" id="proyeccionClick-javascript" xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-caret-down" width="24" height="24" viewBox="0 0 24 24"
+                                stroke-width="2.5" stroke="#2B70AB" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)" />
+                            </svg>
+                        </h3>
+                    </div>
+                    <div class="contenedorSecundario-estilo" id="proyeccionVisible-javascript">
+                        <h4 class="margin-none">Experiencia</h4>
+                            <div class="estilo-lista">
+                                <p><input type="checkbox" checked><label class="texto-uppercase"> macro xe</label></p>
+                                <p><input type="checkbox" checked><label class="texto-uppercase"> cinepolis</label></p>
+                                <p><input type="checkbox" checked><label class="texto-uppercase"> vip</label></p>
+                            </div>
+                        <h4 class="margin-none">Formato</h4>
+                            <div class="estilo-lista">
+                                <p><input type="checkbox" checked><label class="texto-uppercase"> 2d</label></p>
+                                <p><input type="checkbox" checked><label class="texto-uppercase"> dig</label></p>
+                                <p><input type="checkbox" checked><label class="texto-uppercase"> sj</label></p>
+                            </div>
+                        <h4 class="margin-none">Idioma</h4>
+                            <div class="estilo-lista">
+                                <p><input type="checkbox" checked><label class="texto-uppercase"> doblada</label></p>
+                                <p><input type="checkbox" checked><label class="texto-uppercase"> subtitulada</label></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- contenido de las peliculas en los diversos cines  -->
+            <div class="contenedorPelicula__peliculas">
+                <!-- pelicula 1 -->
+                <div class="contenedorCard">
+                    <a href="#" class="texto-uppercase w-100 contenedorCard__titulo"><img src="./img/signo-de-exclamacion.png" alt="signo"> cinépoliss galerías miraflores</a>
+                    <div class="contenedorImagen">
+                        <img src="./img/venus.jpg" alt="venus" class="img-card">
+                    </div>
+                    <div class="contenedorContenido">
+                        <div class="contenedorContenido__titulo">
+                            <h3 class="contenedorContenido__titulo--center">Venus</h3>
+                            <p class="contenedorContenido__titulo--direccion"><span class="texto-uppercase contenedorContenido__titulo--espacio padding-color1 text-color">s/c</span>
+                                <span class="padding-color2 text-color">154</span></p>
+                        </div>
+                        <div class="contenedorContenido__dia">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24"
+                                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>
+                                08 diciembre
+                            </p>
+                        </div>
+                        <div class="contenedorContenido__fecha">
+                            <div class="contendorFecha__texto">
+                                <p class="texto-uppercase texto-azul">dob</p>
+                            </div>
+                            <div class="contenedorFecha__hora"><a href="#" class="gap-pequeño hora-estilo">14:00</a><a href="#" class="gap-pequeño hora-estilo">17:20</a></div>
+                            <div class="contendorFecha__texto">
+                                <p class="texto-uppercase texto-azul">digsub</p>
+                            </div>
+                            <div class="contenedorFecha__hora"><a href="#"class="contendorFecha__hora gap-pequeño hora-estilo" >20:40</a></div>
+                        </div>
+                    </div>
+                    <div class="contenedorPelicula__regreso">
+                        <a href="#" class="texto-uppercase text-color"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-up"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M18 15l-6 -6l-6 6h12" />
+                            </svg> regresar al inicio</a>
+                    </div>
+                </div>
+                <!-- pelicula 2 -->
+                <div class="contenedorCard">
+                    <a href="#" class="texto-uppercase w-100 contenedorCard__titulo"><img src="./img/signo-de-exclamacion.png"
+                            alt="signo"> cinépoliss galerías miraflores</a>
+                    <div class="contenedorImagen">
+                        <img src="./img/venus.jpg" alt="venus" class="img-card">
+                    </div>
+                    <div class="contenedorContenido">
+                        <div class="contenedorContenido__titulo">
+                            <h3 class="contenedorContenido__titulo--center">Venus</h3>
+                            <p class="contenedorContenido__titulo--direccion"><span
+                                    class="texto-uppercase contenedorContenido__titulo--espacio padding-color1 text-color">s/c</span>
+                                <span class="padding-color2 text-color">154</span>
+                            </p>
+                        </div>
+                        <div class="contenedorContenido__dia">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24"
+                                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>
+                                08 diciembre
+                            </p>
+                        </div>
+                        <div class="contenedorContenido__fecha">
+                            <div class="contendorFecha__texto">
+                                <p class="texto-uppercase texto-azul">dob</p>
+                            </div>
+                            <div class="contenedorFecha__hora"><a href="#" class="gap-pequeño hora-estilo">14:00</a><a href="#"
+                                    class="gap-pequeño hora-estilo">17:20</a></div>
+                            <div class="contendorFecha__texto">
+                                <p class="texto-uppercase texto-azul">digsub</p>
+                            </div>
+                            <div class="contenedorFecha__hora"><a href="#"
+                                    class="contendorFecha__hora gap-pequeño hora-estilo">20:40</a></div>
+                        </div>
+                    </div>
+                    <div class="contenedorPelicula__regreso">
+                        <a href="#" class="texto-uppercase text-color"> <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-caret-up" width="24" height="24" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M18 15l-6 -6l-6 6h12" />
+                            </svg> regresar al inicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside>
+        <div class="contenedorProximamente">
+            <div class="contenedorProximamente__peliculas">
+                <h3 class="texto-uppercase">próximamente</h3>
+                <div class="contenedorProximamente__peliculas--espacio">
+                    <img src="./img/avenger end game.jpg" alt="avenger" class="img-size">
+                    <img src="./img/bad boys.jpg" alt="bad boys" class="img-size">
+                    <img src="./img/dunkerque.jpg" alt="dunkerque" class="img-size">
+                    <!-- <img src="./img/gladiador.jpg" alt="gladiador" class="img-size">
+                    <img src="./img/heropanti 2.jpg" alt="heropanti" class="img-size"> -->
+                </div>
+            </div>
+        </div>
+    </aside>
+    <section>
+        <div class="contenedorBusqueda">
+            <div class="contenedorBusqueda__catalogo">
+                <h3 class="texto-uppercase">cátalogo de películas</h3>
+                <input type="search" class="input-Texto w-100">
+            </div>
+        
+            <div class="contenedorBusqueda__pais">
+                <h3 class="texto-uppercase">cambiar de país</h3>
+                <select name="pais" id="pais" class="input-Texto w-100">
+                    <option value="Guatemala" selected> Guatemala</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="El salvador">El salvador</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Argentina">Argentina</option>
+                </select>
+            </div>
+        </div>
+        <div class="contenedorDatos">
+            <div class="contenedorDatos__cartelera">
+                <h3 class="texto-uppercase">cartelera</h3>
+                <a href="#">Preventas</a>
+                <a href="#">+Que cine</a>
+                <a href="#">Muestras y Festivales</a>
+                <a href="#">Próximos Estrenos</a>
+                <a href="#">Cumpleaños de Película</a>
+            </div>
+            <div class="contenedorDatos__quien">
+                <h3 class="texto-uppercase">¿quiénes somos?</h3>
+                <a href="#">Únete al equipo</a>
+                <a href="#">Próximas Aperturas</a>
+                <a href="#">Corporativo</a>
+                <a href="#">Ventas Corporativas</a>
+            </div>
+            <div class="contenedorDatos__legales">
+                <h3 class="texto-uppercase">legales</h3>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Aviso de privacidad</a>
+            </div>
+            <div class="contenedorDatos__contacto">
+                <h3 class="texto-uppercase">contacto</h3>
+                <a href="#"><img src="./img/correo.png" alt="correo"> Déjanos tus comentarios</a>
+            </div>
+        </div>
+    </section>
+    <footer class="contenedorFooter">
+        <p class="contenedorFooter__contenido margin-none">Contenido del sitio 2022© Derechos reservados Carlos Aceituno</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
